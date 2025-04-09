@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osward</title>
+    <link rel="icon" type="image/x-icon" href="images/helping-hand.png'" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;100;300;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" type="text/css" href="style.css">
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="">Osward Mwambehile</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                Osw & Phil
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+    
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testmonials.html">Testmonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+<style type="text/css">
+    
+        /* Styling the entire container */
+
+/* Style for icon containers */
+.icon-container {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.icon-container i {
+    color: #007bff;
+}
+
+.icon-container:hover {
+    transform: scale(1.1);
+    background-color: #007bff;
+}
+
+.icon-container:hover i {
+    color: #fff;
+}
+
+/* Styling each column */
+.col-md-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Header style */
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Paragraph style */
+p {
+    font-size: 16px;
+    color: #666;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Make sure columns are responsive */
+@media (max-width: 767px) {
+    .col-md-4 {
+        margin-bottom: 20px;
+    }
+}
+h1, h2, h3 {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    /* Style for the main heading */
+    h1 {
+        font-size: 36px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #007bff;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
+        margin-top: 50px;
+    }
+
+    /* Subheading style */
+    h2 {
+        font-size: 28px;
+        color: #333;
+        margin-top: 20px;
+        text-transform: capitalize;
+    }
+
+    /* Paragraph style */
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #555;
+        max-width: 800px;
+        margin: 0 auto 30px;
+        text-align: justify;
+    }
+
+    /* Styling for the text in the 'my-story' section */
+    .my-story p {
+        font-size: 18px;
+        line-height: 1.8;
+        color: #666;
+        max-width: 750px;
+        margin: 0 auto 30px;
+        text-align: justify;
+    }
+
+    /* Style for images in 'my-story' section */
+    .my-story img {
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    /* Hover effect on images */
+    .my-story img:hover {
+        transform: scale(1.05);
+    }
+
+    /* Make sure columns are responsive */
+    @media (max-width: 767px) {
+        .col-md-6 {
+            margin-bottom: 20px;
+        }
+    }
+
+    /* Add a little space between the services section title and content */
+    .services h1 {
+        font-size: 34px;
+        text-align: center;
+        margin-bottom: 50px;
+        color: #007bff;
+    }
+
+    /* Service cards (make them stand out with some hover effect) */
+    .card {
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Enhance the icon in each service card */
+    .card .circle {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-color: #007bff;
+        color: white;
+        font-size: 24px;
+        line-height: 60px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .card h4 {
+        font-size: 22px;
+        color: #333;
+        font-weight: 600;
+    }
+
+    .card p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.6;
+    }
+
+    /* Icon container in the skills section */
+    .icon-container {
+        display: inline-block;
+        width: 90px;
+        height: 90px;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 50%;
+        background-color: #f1f1f1;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s ease;
+    }
+
+    .icon-container i {
+        color: #007bff;
+        font-size: 30px;
+    }
+
+    .icon-container:hover {
+        transform: scale(1.1);
+        background-color: #007bff;
+    }
+
+    .icon-container:hover i {
+        color: #fff;
+    }
+
+    /* Additional responsiveness */
+    @media (max-width: 767px) {
+        .col-md-4 {
+            margin-bottom: 30px;
+        }
+    }
+        </style>
+      <section class="container my-5">
+        <h1 class="text-center" data-aos="fade-right" data-aos-duration="3000">MY STORY</h1>
+        
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6" data-aos="fade-left" data-aos-duration="3000">
+                <h2>Passion</h2>
+                <p>I'm a passionate developer with an unwavering love for bringing ideas to life through code. For the past 3 years, I've been immersed in the ever-evolving tech industry, where I've had the incredible privilege of working on a diverse array of projects—from dynamic mobile apps to sophisticated web applications. Each project has fueled my passion for problem-solving and creativity, pushing me to constantly strive for excellence.
+
+Throughout my journey, I've sharpened my skills in Python (Django), C# (.NET), and Angular, but my hunger for knowledge and personal growth drives me to explore new technologies, frameworks, and innovative solutions. What excites me most is the limitless potential of technology to transform ideas into tangible, meaningful impact. I firmly believe that when used the right way, technology isn't just a tool—it's a force that can inspire change, empower communities, and solve some of the world's most pressing challenges. That’s what fuels my passion every day: the opportunity to build, to create, and to leave a lasting impact through the projects I contribute to.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="images/code.jpg" alt="Developer Image" class="img-fluid w-100" data-aos="fade-right" data-aos-duration="3000" style="border-radius: 50px;">
+            </div>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-md-6 order-md-1" data-aos="fade-right" data-aos-duration="3000">
+                <h2>Motive</h2>
+                <p>In addition to my technical expertise, I firmly believe in the power of collaboration and clear communication. I thrive in environments where diverse perspectives come together to create something extraordinary. I am passionate about working alongside developers, designers, and stakeholders to not only ensure the final product is functional but also to elevate it into something truly impactful. Every project is an opportunity to learn, grow, and contribute to something greater than the sum of its parts. By fostering strong teamwork, I strive to create solutions that not only meet but exceed expectations, driving innovation and meaningful results.
+
+</p>
+            </div>
+            <div class="col-md-6 order-md-2">
+                <img src="images/mo.jpg" alt="Motivation Image" class="img-fluid w-100" data-aos="fade-right" data-aos-duration="3000" style="border-radius: 50px;">
+            </div>
+        </div>
+    </section>
+     <section class="services  bg-light" >
+        <div class="container py-5">
+            <h1 class="py-5">The six core work <br>drive me everything do</h1>
+            <div class="row pb-3">
+                <div class="col-lg-4 mb-3">
+                    <div class="card text-center py-3" data-aos="fade-left" data-aos-duration="3000">
+                        <div class="card-body">
+                            <div class="circle">
+                                <span>01</span>
+                            </div>
+                            <h4 class="font-weight-bold pb-3">Accessibility</h4>
+                            <p>Design for All: Understand and implement Web Content Accessibility Guidelines (WCAG) to create software that's accessible to everyone, including people with disabilities.Regular Testing: Use accessibility tools and services to regularly check software. Also, engage with real users to gather feedback.Continuous Learning: Stay updated with accessibility best practices, as they evolve rapidly.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-3">
+                    <div class="card text-center py-3" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="card-body">
+                            <div class="circle">
+                                <span>02</span>
+                            </div>
+                            <h4 class="font-weight-bold pb-3">Empowerment</h4>
+                            <p>User-Centric Design: Prioritize user needs and create software that empowers them to accomplish tasks effortlessly.Provide Tools: Offer tools and features that enable users to customize and adapt the software to their unique requirements.Educate: Offer training, documentation, and resources to help users harness the full potential of the software.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-3">
+                    <div class="card text-center py-3" data-aos="fade-right" data-aos-duration="3000">
+                        <div class="card-body">
+                            <div class="circle">
+                                <span>03</span>
+                            </div>
+                            <h4 class="font-weight-bold pb-3">Excellence</h4>
+                            <p>Quality First: Emphasize writing clean, maintainable, and efficient code.Continuous Learning: Attend workshops, conferences, and webinars. Engage with the developer community.Feedback Loop: Regularly solicit feedback from peers, superiors, and users to continually refine and enhance the software.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-3">
+                    <div class="card text-center py-3" data-aos="fade-left" data-aos-duration="3000">
+                        <div class="card-body">
+                            <div class="circle">
+                                <span>04</span>
+                            </div>
+                            <h4 class="font-weight-bold pb-3">Innovation</h4>
+                            <p>Stay Curious: Regularly explore new technologies, methodologies, and paradigms.Iterative Development: Adopt agile methodologies that allow for continuous feedback and iteration, leading to innovative solutions.Encourage Creativity: Allow time for personal projects or hackathons to stimulate creative thinking.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-3">
+                    <div class="card text-center py-3" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="card-body">
+                            <div class="circle">
+                                <span>05</span>
+                            </div>
+                            <h4 class="font-weight-bold pb-3">Team work</h4>
+                            <p>Open Communication: Foster an environment where team members freely share ideas and concerns.Collaborative Tools: Use version control systems, collaborative coding platforms, and communication tools to work efficiently as a team.Celebrate Diversity: Embrace diverse perspectives and backgrounds, as they enrich the problem-solving process.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-3">
+                    <div class="card text-center py-3" data-aos="fade-right" data-aos-duration="3000">
+                        <div class="card-body">
+                            <div class="circle">
+                                <span>06</span>
+                            </div>
+                            <h4 class="font-weight-bold pb-3">Responsibility</h4>
+                            <p>Ethical Coding: Recognize the potential impact of code and make decisions that are ethical and in the best interest of users and society.Security: Prioritize security to protect user data and privacy.Sustainability: Write efficient code that optimizes resources and reduces environmental impact.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="about py-5" id="about">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img src="images/biso.JPG" data-aos="fade-right" data-aos-duration="3000" class="img-fluid" alt="" style="height: 90vh;">
+                </div>
+                <div class="col-lg-7 pt-3">
+                    <h1 data-aos="fade-right" data-aos-duration="3000">About Me</h1>
+                    <p data-aos="fade-right" data-aos-duration="3000">WEB DEVELOPER AND MOBILE DEVELOPER</p>
+                    <P class="py-3"data-aos="fade-right" data-aos-duration="3000">Hi! I'm Osward Mwambehile, a passionate and results-driven Web and Mobile Developer. With a deep understanding
+                         of both front-end and back-end technologies, I specialize in creating seamless and responsive applications that elevate user experiences across the web and mobile platforms.
+
+                        I have a keen eye for detail and a strong commitment to delivering high-quality code. My expertise 
+                        spans a wide range of technologies, including HTML, CSS, JavaScript, React, Vue.js, and mobile 
+                        development frameworks like React Native and Flutter. Whether it's building dynamic websites or
+                         crafting intuitive mobile apps, I strive to design clean, efficient, and scalable solutions that meet your unique needs.
+                        
+                        What excites me most is the challenge of turning complex problems into simple, functional, and aesthetically pleasing solutions. I believe that collaboration, continuous learning, and staying updated with industry trends are key to staying ahead in this fast-evolving tech landscape.
+                        
+                        Let's work together to bring your ideas to life, whether you're looking to develop your next web application or mobile app.
+                         I'm always ready to take on exciting projects and help you build something</P>
+
+                         <div class="progress my-3" data-aos="fade-right" data-aos-duration="3000">
+                            <div class="pro-value1">
+                                <p>HTML/CSS <span class="text-white float-right">96%</span></p>
+                            </div>
+                         </div>
+                         <div class="progress my-3" data-aos="fade-right" data-aos-duration="3000">
+                            <div class="pro-value2">
+                                <p>PYTHON <span class="text-white float-right">85%</span></p>
+                            </div>
+                         </div>
+                         <div class="progress my-3" data-aos="fade-right" data-aos-duration="3000">
+                            <div class="pro-value3">
+                                <p>PHP <span class="text-white float-right">80%</span></p>
+                            </div>
+                         </div>
+                         <div class="progress my-3" data-aos="fade-right" data-aos-duration="3000">
+                            <div class="pro-value4">
+                                <p>JAVASCRIPT <span class="text-white float-right">70%</span></p>
+                            </div>
+                         </div>
+                         <div class="progress my-3" data-aos="fade-right" data-aos-duration="3000">
+                            <div class="pro-value5">
+                                <p>JAVA <span class="text-white float-right">45%</span></p>
+                            </div>
+                         </div>
+                         <a href="images/oswardcv.pdf " Download style="text-decoration: none;"><input type="button" value="Download CV" class="btn1 mt-5" data-aos="fade-right" data-aos-duration="3000"></a>
+                         
+                </div>
+            </div>
+        </div>
+
+      </section>
+    
+
+<section class="container my-5">
+    <div class="row text-center">
+        <!-- Column 1 - Mobile Apps -->
+        <div class="col-md-4 mb-4 mobile-apps" data-aos="fade-left" data-aos-duration="3000">
+            <div class="icon-container">
+                <i class="fas fa-mobile-alt fa-3x"></i>
+            </div>
+            <h3>Mobile Apps</h3>
+            <div class="rating" style="color: yellow;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+            </div>
+        </div>
+
+        <!-- Column 2 - Prototyping -->
+        <div class="col-md-4 mb-4 prototyping" data-aos="fade-up" data-aos-duration="3000">
+            <div class="icon-container">
+                <i class="fas fa-laptop-code fa-3x"></i>
+            </div>
+            <h3>Prototyping</h3>
+            <div class="rating" style="color: yellow;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+            </div>
+        </div>
+
+        <!-- Column 3 - Machine Learning -->
+        <div class="col-md-4 mb-4 machine-learning" data-aos="fade-right" data-aos-duration="3000">
+            <div class="icon-container">
+                <i class="fas fa-robot fa-3x"></i>
+            </div>
+            <h3>Machine Learning</h3>
+            <div class="rating" style="color: yellow;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+ <footer class="footer bg-dark text-light py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Get in touch Section -->
+            <div class="col-md-4 mb-4">
+                <h2>Get in touch with me today!</h2>
+                <a href="#appointment" class="btn btn-warning text-dark mt-3">Take Appointment</a>
+            </div>
+
+            <!-- About Section -->
+            <div class="col-md-4 mb-4">
+                <h3>Osward Philimon Mwambehile</h3>
+                <p>Creating solutions, transforming ideas, making life simpler and the world connected.</p>
+            </div>
+
+            <!-- Subscribe Section -->
+            <div class="col-md-4 mb-4">
+                <h3>Subscribe for Newsletter</h3>
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Enter Your Email">
+                    <div class="input-group-append">
+                        <button class="btn btn-warning">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Quick Links -->
+            <div class="col-md-3 mb-4">
+                <h3>Quick links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Home</a></li>
+                    <li><a href="#" class="text-light">About</a></li>
+                    <li><a href="#" class="text-light">Projects</a></li>
+                    <li><a href="#" class="text-light">FAQ</a></li>
+                    <li><a href="#" class="text-light">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="col-md-3 mb-4">
+                <h3>Contact Details</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 14122 Kunduchi, Dar es Salaam, TZ</p>
+                <p><i class="fas fa-clock"></i> 24 / 7</p>
+                <p><i class="fas fa-phone-alt"></i> <a href="tel:+255656631106" class="text-light">+255 89 85 92 55</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:oswardmwmbehile@gmail.com" class="text-light">oswardmwmbehile@gmail.com</a></p>
+            </div>
+
+            <!-- Social Links -->
+            <div class="col-md-3 mb-4">
+                <h3>Social</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#" class="text-light"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#" class="text-light"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                    <li><a href="#" class="text-light"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom bg-dark text-center py-3">
+        <p>© 2023 Osward Philimon Mwambehile. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- Contact US -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

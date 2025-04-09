@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osward</title>
+    <link rel="icon" type="image/x-icon" href="images/helping-hand.png'" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;100;300;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<body id="page-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="">Osward Mwambehile</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                Osw & Phil
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+    
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testmonials.html">Testmonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    
+                    
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+<style type="text/css">
+    header {
+  background-color: #007bff;
+  color: white;
+  padding: 60px 0;
+}
+
+header .display-4 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+header .lead {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Categories Section */
+.filter-btn {
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Blog Posts Section */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+.card-body {
+  position: relative;
+}
+
+.card-body .badge {
+  font-size: 14px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 10px;
+}
+
+.post-card {
+  background-color: #fff;
+}
+
+.post-card.deployment {
+  border-left: 5px solid #007bff;
+}
+
+.post-card.optimization {
+  border-left: 5px solid #28a745;
+}
+
+.post-card.featured {
+  border-left: 5px solid #dc3545;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-radius: 10px 10px 0 0;
+  height: 200px;
+  object-fit: cover;
+}
+</style>
+
+
+  <!-- Header Section -->
+  <header class=" text-white py-5" style="background-color: rgb(9, 200, 248);">
+    <div class="container text-center">
+      <h1 class="display-4 fw-bold" data-aos="fade-right" data-aos-duration="3000">Top Most Posts</h1>
+      <p class="lead"data-aos="fade-right" data-aos-duration="3000">Explore the most trending guides, tutorials, and insights</p>
+    </div>
+  </header>
+
+  <!-- Categories Section -->
+  
+
+  <!-- Blog Posts Section -->
+  <section class="container my-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <!-- Post 1: Deployment - The Ultimate Guide to Google Search Console -->
+      <div class="col" data-aos="fade-right" data-aos-duration="3000">
+        <div class="card post-card deployment">
+          <img src="images/google.jpg" class="card-img-top" alt="Google Search Console">
+          <div class="card-body">
+            <h5 class="card-title">The Ultimate Guide to Google Search Console</h5>
+            <p class="card-text">Know how to make your website appear at the top of Google search engine.</p>
+            <div class="d-flex justify-content-between">
+              <small class="text-muted">21st Sep, 2023</small>
+              <small class="text-muted">15 Min To Read</small>
+            </div>
+            <span class="badge bg-primary mt-2">Deployment</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Post 2: Optimization - Web Page Optimization -->
+      <div class="col" data-aos="fade-up" data-aos-duration="3000">
+        <div class="card post-card optimization">
+          <img src="images/web.jpg" class="card-img-top" alt="Web Optimization">
+          <div class="card-body">
+            <h5 class="card-title">Web Page Optimization</h5>
+            <p class="card-text">Learn how to make your page faster than ever.</p>
+            <div class="d-flex justify-content-between">
+              <small class="text-muted">22nd Sep, 2023</small>
+              <small class="text-muted">11 Min To Read</small>
+            </div>
+            <span class="badge bg-success mt-2">Optimization</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Post: Development - Mobile App Development Best Practice -->
+      <div class="col" data-aos="fade-down" data-aos-duration="3000">
+        <div class="card post-card featured development">
+          <img src="images/iphone.jpg" class="card-img-top" alt="App Development">
+          <div class="card-body">
+            <h5 class="card-title">Mobile App Development Best Practice</h5>
+            <p class="card-text">Make your mobile app smoother than ever.</p>
+            <div class="d-flex justify-content-between">
+              <small class="text-muted">11th Sep, 2023</small>
+              <small class="text-muted">30 Min To Read</small>
+            </div>
+            <span class="badge bg-danger mt-2">Development</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section style="
+  background-color: #f5f5f5; 
+  padding: 40px 20px; 
+  border-radius: 15px; 
+  margin: 0 auto; 
+  max-width: 1200px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  font-family: Arial, sans-serif;
+">
+  <div class="container my-5" data-aos="fade-right" data-aos-duration="3000">
+    <div class="d-flex justify-content-center flex-wrap gap-4"data-aos="fade-right" data-aos-duration="3000">
+      <button style="
+        padding: 12px 20px; 
+        border: 2px solid #007bff; 
+        border-radius: 8px; 
+        background-color: transparent; 
+        color: #007bff; 
+        font-size: 16px; 
+        font-weight: 500; 
+        transition: all 0.3s ease-in-out; 
+        cursor: pointer;
+      " class="filter-btn active" onmouseover="this.style.backgroundColor='#007bff'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#007bff';">
+        All Categories
+      </button>
+      <button style="
+        padding: 12px 20px; 
+        border: 2px solid #007bff; 
+        border-radius: 8px; 
+        background-color: transparent; 
+        color: #007bff; 
+        font-size: 16px; 
+        font-weight: 500; 
+        transition: all 0.3s ease-in-out; 
+        cursor: pointer;
+      " class="filter-btn" onmouseover="this.style.backgroundColor='#007bff'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#007bff';">
+        Development
+      </button>
+      <button style="
+        padding: 12px 20px; 
+        border: 2px solid #007bff; 
+        border-radius: 8px; 
+        background-color: transparent; 
+        color: #007bff; 
+        font-size: 16px; 
+        font-weight: 500; 
+        transition: all 0.3s ease-in-out; 
+        cursor: pointer;
+      " class="filter-btn" onmouseover="this.style.backgroundColor='#007bff'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#007bff';">
+        Updates
+      </button>
+      <button style="
+        padding: 12px 20px; 
+        border: 2px solid #007bff; 
+        border-radius: 8px; 
+        background-color: transparent; 
+        color: #007bff; 
+        font-size: 16px; 
+        font-weight: 500; 
+        transition: all 0.3s ease-in-out; 
+        cursor: pointer;
+      " class="filter-btn" onmouseover="this.style.backgroundColor='#007bff'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#007bff';">
+        Deployment
+      </button>
+      <button style="
+        padding: 12px 20px; 
+        border: 2px solid #007bff; 
+        border-radius: 8px; 
+        background-color: transparent; 
+        color: #007bff; 
+        font-size: 16px; 
+        font-weight: 500; 
+        transition: all 0.3s ease-in-out; 
+        cursor: pointer;
+      " class="filter-btn" onmouseover="this.style.backgroundColor='#007bff'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#007bff';">
+        Optimization
+      </button>
+    </div>
+  </div>
+</section>
+
+<section style="
+  background-color: #ffffff; 
+  padding: 50px 20px; 
+  margin: 0 auto; 
+  max-width: 1200px; 
+  font-family: Arial, sans-serif;
+">
+  <div class="container my-5">
+    <h2 style="
+      text-align: center; 
+      font-size: 32px; 
+      font-weight: 600; 
+      color: #333; 
+      margin-bottom: 40px;
+    ">Featured Posts</h2>
+    <div class="d-flex flex-wrap justify-content-center gap-4">
+      <!-- Post 1 -->
+      <div style="
+        width: 100%; 
+        max-width: 350px; 
+        border-radius: 12px; 
+        overflow: hidden; 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+        transition: transform 0.3s ease-in-out; 
+        cursor: pointer;
+      " onmouseover="this.style.transform='scale(1.05)';" onmouseout="this.style.transform='scale(1)';">
+        <img src="images/c.jpg" alt="Featured Post 1" style="
+          width: 100%; 
+          height: 200px; 
+          object-fit: cover;
+        " data-aos="fade-right" data-aos-duration="3000">
+        <div style="padding: 20px; background-color: #fafafa;">
+          <h3 style="
+            font-size: 22px; 
+            font-weight: 600; 
+            color: #007bff; 
+            margin-bottom: 10px;
+          " data-aos="fade-right" data-aos-duration="3000">Desktop Application</h3>
+          <p style="
+            font-size: 16px; 
+            color: #666; 
+            margin-bottom: 15px; 
+            line-height: 1.6;
+          " data-aos="fade-right" data-aos-duration="3000">
+            A short description of the featured post. This will give visitors an idea of what the post is about.
+          </p>
+          <a href="#" style="
+            font-size: 16px; 
+            color: #007bff; 
+            font-weight: 500; 
+            text-decoration: none; 
+            transition: color 0.3s ease;
+          " onmouseover="this.style.color='#0056b3';">Read More</a>
+        </div>
+      </div>
+
+      <!-- Post 2 -->
+      <div style="
+        width: 100%; 
+        max-width: 350px; 
+        border-radius: 12px; 
+        overflow: hidden; 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+        transition: transform 0.3s ease-in-out; 
+        cursor: pointer;
+      " onmouseover="this.style.transform='scale(1.05)';" onmouseout="this.style.transform='scale(1)';"data-aos="fade-up" data-aos-duration="3000">
+        <img src="images/f.webp" style="
+          width: 100%; 
+          height: 200px; 
+          object-fit: cover;
+        " data-aos="fade-up" data-aos-duration="3000">
+        <div style="padding: 20px; background-color: #fafafa;">
+          <h3 style="
+            font-size: 22px; 
+            font-weight: 600; 
+            color: #007bff; 
+            margin-bottom: 10px;
+          ">Mobile Application</h3>
+          <p style="
+            font-size: 16px; 
+            color: #666; 
+            margin-bottom: 15px; 
+            line-height: 1.6;
+          " data-aos="fade-up" data-aos-duration="3000">
+            Another great post, offering useful insights or entertainment that your readers will love.
+          </p>
+          <a href="#" style="
+            font-size: 16px; 
+            color: #007bff; 
+            font-weight: 500; 
+            text-decoration: none; 
+            transition: color 0.3s ease;
+          " onmouseover="this.style.color='#0056b3';" data-aos="fade-up" data-aos-duration="3000">Read More</a>
+        </div>
+      </div>
+
+      <!-- Post 3 -->
+      <div style="
+        width: 100%; 
+        max-width: 350px; 
+        border-radius: 12px; 
+        overflow: hidden; 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+        transition: transform 0.3s ease-in-out; 
+        cursor: pointer;
+      " onmouseover="this.style.transform='scale(1.05)';" onmouseout="this.style.transform='scale(1)';" data-aos="fade-left" data-aos-duration="3000">
+        <img src="images/c1.png" alt="Featured Post 3" style="
+          width: 100%; 
+          height: 200px; 
+          object-fit: cover;
+        " data-aos="fade-left" data-aos-duration="3000">
+        <div style="padding: 20px; background-color: #fafafa;">
+          <h3 style="
+            font-size: 22px; 
+            font-weight: 600; 
+            color: #007bff; 
+            margin-bottom: 10px;
+          " data-aos="fade-left" data-aos-duration="3000">Web Deploynment</h3>
+          <p style="
+            font-size: 16px; 
+            color: #666; 
+            margin-bottom: 15px; 
+            line-height: 1.6;
+          " data-aos="fade-left" data-aos-duration="3000">
+            Description for the featured post goes here. Let your audience know why this post is a must-read.
+          </p>
+          <a href="#" style="
+            font-size: 16px; 
+            color: #007bff; 
+            font-weight: 500; 
+            text-decoration: none; 
+            transition: color 0.3s ease;
+          " onmouseover="this.style.color='#0056b3';" data-aos="fade-left" data-aos-duration="3000">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer Section -->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer bg-dark text-light py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Get in touch Section -->
+            <div class="col-md-4 mb-4">
+                <h2>Get in touch with me today!</h2>
+                <a href="#appointment" class="btn btn-warning text-dark mt-3">Take Appointment</a>
+            </div>
+
+            <!-- About Section -->
+            <div class="col-md-4 mb-4">
+                <h3>Osward Philimon Mwambehile</h3>
+                <p>Creating solutions, transforming ideas, making life simpler and the world connected.</p>
+            </div>
+
+            <!-- Subscribe Section -->
+            <div class="col-md-4 mb-4">
+                <h3>Subscribe for Newsletter</h3>
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Enter Your Email">
+                    <div class="input-group-append">
+                        <button class="btn btn-warning">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Quick Links -->
+            <div class="col-md-3 mb-4">
+                <h3>Quick links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Home</a></li>
+                    <li><a href="#" class="text-light">About</a></li>
+                    <li><a href="#" class="text-light">Projects</a></li>
+                    <li><a href="#" class="text-light">FAQ</a></li>
+                    <li><a href="#" class="text-light">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="col-md-3 mb-4">
+                <h3>Contact Details</h3>
+                <p><i class="fas fa-map-marker-alt"></i>  Dar es Salaam, TZ</p>
+                <p><i class="fas fa-clock"></i> 24 / 7</p>
+                <p><i class="fas fa-phone-alt"></i> <a href="tel:+255656631106" class="text-light">+255 689 8592 55</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:oswardmwmbehile@gmail.com" class="text-light">oswardmwmbehile@gmail.com</a></p>
+            </div>
+
+            <!-- Social Links -->
+            <div class="col-md-3 mb-4">
+                <h3>Social</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#" class="text-light"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#" class="text-light"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                    <li><a href="#" class="text-light"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom bg-dark text-center py-3">
+        <p>© 2023 Osward Philimon Mwambehile. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- Contact US -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

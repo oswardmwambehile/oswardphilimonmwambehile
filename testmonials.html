@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osward</title>
+    <link rel="icon" type="image/x-icon" href="images/helping-hand.png'" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;100;300;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" type="text/css" href="style.css">
+<body id="page-top">
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="">Osward Mwambehile</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                Osw & Phil
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+    
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testmonials.html">Testmonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    
+                    
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<section>
+   
+    <style>
+        .testimonial-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-card-body {
+            padding: 25px;
+        }
+
+        .testimonial-title {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .testimonial-text {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .stat-card {
+            border-radius: 8px;
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        .stat-card p {
+            font-size: 1.2rem;
+            color: #6c757d;
+        }
+
+        .testimonial-section {
+            padding: 50px 0;
+        }
+
+        /* Add some hover effect for stats */
+        .stat-card:hover {
+            background-color: #e9ecef;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+
+    <div class="container testimonial-section">
+        <div class="text-center mb-5">
+            <h4 class="" style="color: blue;">My Customers Love My Product</h4>
+            <h1 class="display">Testimonials</h1>
+            <p class="lead text-muted">Don't just take my word for it, read from my extensive list of case studies and client testimonials.</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <!-- Testimonials Column -->
+            <div class="col" data-aos="fade-right" data-aos-duration="3000">
+                <div class="card d-flex flex-row align-items-center shadow-sm border-light">
+                    <i class="fas fa-quote-left fa-3x text-success me-3"></i>
+                    <div class="card-body">
+                        <p class="card-title fw-bold">Sandra Walioba - CEO SomeCompany</p>
+                        <p class="card-text text-muted">I'm loving this templates! Very nice features and layouts.</p>
+                    </div>
+                    <img src="images/biso1.png" alt="Profile" class="rounded-circle border ms-3" style="width: 100px; height: 90px">
+                </div>
+            </div>
+
+            <div class="col" data-aos="fade-up" data-aos-duration="3000">
+                <div class="card d-flex flex-row align-items-center shadow-sm border-light">
+                    <i class="fas fa-quote-left fa-3x text-success me-3"></i>
+                    <div class="card-body">
+                        <p class="card-title fw-bold">Kenny Lucas - CEO SomeCompany</p>
+                        <p class="card-text text-muted">Really digging this service. Now I can quickly bootstrap any project.</p>
+                    </div>
+                    <img src="images/biso1.png" alt="Profile" class="rounded-circle border ms-3" style="width: 100px; height: 90px">
+                </div>
+            </div>
+
+            <div class="col" data-aos="fade-right" data-aos-duration="3000">
+                <div class="card d-flex flex-row align-items-center shadow-sm border-light">
+                    <i class="fas fa-quote-left fa-3x text-success me-3"></i>
+                    <div class="card-body">
+                        <p class="card-title fw-bold">Mike Sponsor - CEO SomeCompany</p>
+                        <p class="card-text text-muted">Extremely helpful in every single project you have released.</p>
+                    </div>
+                    <img src="images/biso1.png" alt="Profile" class="rounded-circle border ms-3" style="width: 100px; height: 90px">
+                </div>
+            </div>
+
+            <div class="col" data-aos="fade-up" data-aos-duration="3000">
+                <div class="card d-flex flex-row align-items-center shadow-sm border-light">
+                    <i class="fas fa-quote-left fa-3x text-success me-3"></i>
+                    <div class="card-body">
+                        <p class="card-title fw-bold">Chaz Sanchez - CEO SomeCompany</p>
+                        <p class="card-text text-muted">Your template is nice, can I use it on my personal project?</p>
+                    </div>
+                    <img src="images/biso1.png" alt="Profile" class="rounded-circle border ms-3" style="width: 100px; height: 90px">
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics Section -->
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+            <div class="col" data-aos="fade-right" data-aos-duration="3000">
+                <div class="card text-center p-4 shadow-sm border-light">
+                    <h3 id="happyClients" class="display-4 text-success">0</h3>
+                    <p class="text-muted">Happy Clients</p>
+                </div>
+            </div>
+
+            <div class="col" data-aos="fade-up" data-aos-duration="3000">
+                <div class="card text-center p-4 shadow-sm border-light">
+                    <h3 id="issuesSolved" class="display-4 text-success">0</h3>
+                    <p class="text-muted">Issues Solved</p>
+                </div>
+            </div>
+
+            <div class="col" data-aos="fade-right" data-aos-duration="3000">
+                <div class="card text-center p-4 shadow-sm border-light">
+                    <h3 id="goodReviews" class="display-4 text-success">0</h3>
+                    <p class="text-muted">Good Reviews</p>
+                </div>
+            </div>
+
+            <div class="col" data-aos="fade-up" data-aos-duration="3000">
+                <div class="card text-center p-4 shadow-sm border-light">
+                    <h3 id="caseStudies" class="display-4 text-success">0</h3>
+                    <p class="text-muted">Case Studies</p>
+                </div>
+            </div>
+
+            <div class="col" data-aos="fade-right" data-aos-duration="3000">
+                <div class="card text-center p-4 shadow-sm border-light">
+                    <h3 id="ordersReceived" class="display-4 text-success">0</h3>
+                    <p class="text-muted">Orders Received</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript for animated number counters -->
+    <script>
+        // Function to animate the counter
+        function animateCounter(elementId, start, end, duration) {
+            let current = start;
+            const increment = (end - start) / (duration / 50);
+            const element = document.getElementById(elementId);
+
+            const interval = setInterval(function() {
+                current += increment;
+                if (current >= end) {
+                    clearInterval(interval);
+                    current = end;
+                }
+                element.innerText = Math.round(current);
+            }, 50);
+        }
+
+        // Start the counters after the page loads
+        window.onload = function() {
+            animateCounter('happyClients', 0, 103, 2000);   // 103 Happy Clients
+            animateCounter('issuesSolved', 0, 122, 2000);    // 122 Issues Solved
+            animateCounter('goodReviews', 0, 103, 2000);     // 103 Good Reviews
+            animateCounter('caseStudies', 0, 76, 2000);      // 76 Case Studies
+            animateCounter('ordersReceived', 0, 150, 2000);  // 150 Orders Received
+        };
+    </script>
+
+
+</section>
+
+
+
+
+
+
+
+ <footer class="footer bg-dark text-light py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Get in touch Section -->
+            <div class="col-md-4 mb-4">
+                <h2>Get in touch with me today!</h2>
+                <a href="#appointment" class="btn btn-warning text-dark mt-3">Take Appointment</a>
+            </div>
+
+            <!-- About Section -->
+            <div class="col-md-4 mb-4">
+                <h3>Osward Philimon Mwambehile</h3>
+                <p>Creating solutions, transforming ideas, making life simpler and the world connected.</p>
+            </div>
+
+            <!-- Subscribe Section -->
+            <div class="col-md-4 mb-4">
+                <h3>Subscribe for Newsletter</h3>
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Enter Your Email">
+                    <div class="input-group-append">
+                        <button class="btn btn-warning">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Quick Links -->
+            <div class="col-md-3 mb-4">
+                <h3>Quick links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Home</a></li>
+                    <li><a href="#" class="text-light">About</a></li>
+                    <li><a href="#" class="text-light">Projects</a></li>
+                    <li><a href="#" class="text-light">FAQ</a></li>
+                    <li><a href="#" class="text-light">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="col-md-3 mb-4">
+                <h3>Contact Details</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 14122 Kunduchi, Dar es Salaam, TZ</p>
+                <p><i class="fas fa-clock"></i> 24 / 7</p>
+                <p><i class="fas fa-phone-alt"></i> <a href="tel:+255656631106" class="text-light">+255 656 6311 06</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:oswardmwmbehile@gmail.com" class="text-light">oswardmwmbehile@gmail.com</a></p>
+            </div>
+
+            <!-- Social Links -->
+            <div class="col-md-3 mb-4">
+                <h3>Social</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#" class="text-light"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#" class="text-light"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                    <li><a href="#" class="text-light"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom bg-dark text-center py-3">
+        <p>© 2023 Osward Philimon Mwambehile. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- Contact US -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
